@@ -1,0 +1,27 @@
+<web-app >
+  <servlet>
+  <servlet-name>BeanServlet</servlet-name>
+  <servlet-class>Test.BeanServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>BeanServlet</servlet-name>
+  <url-pattern>/bean</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>DisServlet</servlet-name>
+  <servlet-class>Test.DisServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>DisServlet</servlet-name>
+  <url-pattern>/dis</url-pattern>
+  </servlet-mapping>
+  
+ 
+   
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
