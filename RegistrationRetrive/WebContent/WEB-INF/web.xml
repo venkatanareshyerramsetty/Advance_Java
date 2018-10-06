@@ -1,0 +1,15 @@
+<web-app >
+  <servlet>
+  <servlet-name>Retrive</servlet-name>
+  <servlet-class>Test.Retrive</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Retrive</servlet-name>
+  <url-pattern>/pqr</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>retrive.html</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,16 @@
+<web-app>
+<servlet>
+<servlet-name>DisServlet</servlet-name>
+<servlet-class>Test.DisServlet</servlet-class>
+
+<init-param>
+<param-name>cName</param-name>
+<param-value>30000</param-value>
+</init-param>
+</servlet>
+
+<sevlet-mapping>
+<servlet-name>DisServlet</servlet-name>
+<url-pattern>/dis</url-pattern>
+</sevlet-mapping>
+</web-app>

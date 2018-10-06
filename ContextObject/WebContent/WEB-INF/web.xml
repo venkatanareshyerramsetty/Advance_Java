@@ -1,0 +1,16 @@
+<web-app>
+<context-param>
+<param-name>cName</param-name>
+<param-value>20000</param-value>
+</context-param>
+
+<servlet>
+<servlet-name>DisServlet</servlet-name>
+<servlet-class>Test.DisServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DisServlet</servlet-name>
+<url-pattern>/dis</url-pattern>
+</servlet-mapping>
+</web-app>

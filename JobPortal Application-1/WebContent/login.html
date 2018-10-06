@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("image5.jpeg");
+        }
+        .form-div{
+            width: 300px;
+            height: 350px;
+            text-align: center;
+            margin: 200px auto;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00AEEF;
+        }
+        .form-div img{
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+        }
+        .form-div h2{
+            color: white;
+            margin-top: 10px;
+        }
+        input[type='text'],input[type='password']{
+            font-size: 18px;
+            text-align: center;
+            height: 35px;
+            border: none;
+            outline: none;
+            border-bottom: 3px solid teal;
+            background: transparent;
+            width: 180px;
+            color: white;
+        }
+        input[type='text']:focus,
+        input[type='password']:focus{
+            border-bottom: 3px solid #00AEEF;
+        }
+        ::placeholder{
+            color: lightgray;
+        }
+        input[type='submit']{
+            background-color: teal;
+            color: white;
+            margin: 20px;
+            border: none;
+            font-size: 18px;
+            padding: 10px 45px;
+            border-radius: 50px;
+        }
+        input[type='submit']:hover{
+            box-shadow: 0 0 15px white;
+        }
+        #register{
+            background-color: teal;
+            color: white;
+            margin: 20px;
+            border: none;
+            font-size: 18px;
+            padding: 10px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: Arial sans-serif;
+            font-size: 18px;
+        }
+        #register:hover{
+            box-shadow: 0 0 15px white;
+        }
+    </style>
+</head>
+<body>
+<!-- Login Form -->
+<div class="form-div">
+    <img src="user.png">
+    <h2>Login Here</h2>
+    <form action="log" method="post">
+        <input type="text" name="User Name" placeholder="User Name">
+        <br>
+        <input type="password" name="Password" placeholder="Password">
+        <br>
+        <input type="submit" value="Login">
+        <a id="register" href="register.html">REGISTER</a>
+    </form>
+</div>
+</body>
+</html>

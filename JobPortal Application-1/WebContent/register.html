@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("image4.jpeg");
+            color: white;
+            margin: 10px;
+        }
+        td{
+            font-size: 25px;
+            padding: 5px;
+        }
+        h2{
+            background-color: darkred;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 15px black;
+        }
+        input[type='text'],input[type='password']{
+            font-size: 18px;
+            height: 35px;
+            border:none;
+            outline: none;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        input[type='submit']{
+            background-color: teal;
+            color: white;
+            margin: 20px;
+            border: none;
+            font-size: 18px;
+            padding: 10px 45px;
+            border-radius: 50px;
+            margin: 50px;
+            float: left;
+        }
+
+        input[type='submit']:hover{
+            box-shadow: 0 0 15px white;
+            cursor: pointer;
+        }
+        .button:hover{
+           background-color: darkgreen;
+
+        }
+    </style>
+</head>
+<body>
+
+<form class="register" action="reg" method="post">
+<div id ="personel-info">
+    <h2>Registration of New User</h2>
+    <table width="100%">
+        <tr>
+            <td>UserName</td>
+            <td>
+                <input type="text" name="username"  placeholder="username">
+            </td>
+
+            <td>passWord</td>
+            <td>
+                <input type="password"name="password" placeholder="password">
+            </td>
+
+            <td>RepassWord</td>
+            <td>
+                <input type="password"name="repassword" placeholder="repassword">
+            </td>
+        </tr>
+        <tr>
+            <td>FirstName</td>
+            <td>
+                <input type="text"name="firstname" placeholder="firstname">
+            </td>
+
+            <td>Lastname</td>
+            <td>
+                <input type="text"name="lastname" placeholder="lastname">
+            </td>
+
+            <td>Address</td>
+            <td>
+                <input type="text"name="address" placeholder="address">
+            </td>
+        </tr>
+        <tr>
+            <td>PhoneNo</td>
+            <td>
+                <input type="text"name="phoneno" placeholder="phoneno">
+            </td>
+            <td>mailId</td>
+            <td>
+                <input type="text"name="mailid" placeholder="mailid">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td>
+                <input  type="submit"value="REGISTER" class="button">
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+</form>
+
+</body>
+</html>
